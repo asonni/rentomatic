@@ -11,5 +11,5 @@ Run `gulp`
 
 ## Open your browser
 
-http://www.localhost:3000/
+http://localhost:3000/#/
 (http://localhost:3000)
