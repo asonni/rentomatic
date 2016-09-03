@@ -1,15 +1,14 @@
-## Installing
-npm install
+## Install dependencies
 
-bower install
+Run `npm install` & `bower install`.
 
 
-## Run Server
+## Build & development
 
-gulp
+Run `gulp`
 
 
 
 ## Open your browser
 
-http://localhost:3000
+(http://localhost:3000)
