@@ -3,7 +3,7 @@
 Run `npm install` & `bower install`.
 
 
-## Build & development
+## Run the server
 
 Run `gulp`
 
