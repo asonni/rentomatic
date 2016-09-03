@@ -1,0 +1,27 @@
+{
+  "name": "rentomatic",
+  "description": "",
+  "main": "",
+  "authors": [
+    "Aladdin Sonni <alaaden3000@gmail.com>"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "^1.5.8",
+    "bootstrap": "^3.3.7",
+    "font-awesome": "^4.6.3",
+    "angular-ui-router": "^0.3.1",
+    "angular-auto-validate": "^1.19.6",
+    "angular-animate": "^1.5.8",
+    "oclazyload": "^1.0.9"
+  }
+}
