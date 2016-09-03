@@ -11,4 +11,4 @@ Run `gulp`
 
 ## Open your browser
 
-<a href="http://localhost:3000" target="_blank">Open</a> or http://localhost:3000
+<a href="http://localhost:3000" target="_blank">Open</a> or enter `http://localhost:3000`
