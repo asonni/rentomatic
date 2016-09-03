@@ -11,5 +11,5 @@ Run `gulp`
 
 ## Open your browser
 
-Here you can find Angular2 based version: [ng2-admin](https://github.com/akveo/ng2-admin).
+Installation, customization and other useful articles: http://akveo.github.io/blur-admin/
 (http://localhost:3000)
