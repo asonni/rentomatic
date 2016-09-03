@@ -11,5 +11,5 @@ Run `gulp`
 
 ## Open your browser
 
-http://akveo.github.io/blur-admin/
+http://localhost:3000
 (http://localhost:3000)
