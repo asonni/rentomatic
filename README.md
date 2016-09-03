@@ -8,5 +8,8 @@ bower install
 
 gulp
 
-## License
-MIT
+
+
+## Open your browser
+
+http://localhost:3000
