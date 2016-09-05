@@ -3,8 +3,20 @@
   angular.module('rentomatic',[
     'ngAnimate',
     'ui.router',
-    'oc.lazyLoad'
+    'oc.lazyLoad',
+    'angularSpinner',
+    'angular-ui-view-spinner',
+    'anim-in-out'
   ])
+  .run(['$rootScope',function($rootScope) {
+    // you can inject any instance here
+    $rootScope.ctrl = {
+      'speed': 200,
+      'sync': false,
+      'formStyle': 'anim-slide-below-fade',
+      'resultsStyle': 'anim-slide-below-fade'
+    };
+  }])
   .config(['$stateProvider','$urlRouterProvider','$ocLazyLoadProvider',function($stateProvider,$urlRouterProvider,$ocLazyLoadProvider){
     $urlRouterProvider.otherwise('/');
     $stateProvider.state('results', {

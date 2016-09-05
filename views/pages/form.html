@@ -1,1 +1,588 @@
-<h1>Form</h1>
+<div class="wrapper {{ctrl.formStyle}}" >
+  <form novalidate ng-submit="newRentalApplication()">
+    <div class="panel panel-primary">
+      <div class="panel-heading">
+        <h3 class="panel-title">PERSONAL INFORMATION</h3>
+      </div>
+      <div class="panel-body">
+        <div class="row">
+          <div class="col-xs-6 col-md-3">
+            <div class="form-group">
+              <label class="control-label">First Name</label>
+              <input class="form-control input-sm" type="text" ng-model="rentalApplicationForm.firstName" placeholder="First Name" required>
+            </div>
+          </div>
+          <div class="col-xs-6 col-md-3">
+            <div class="form-group">
+              <label class="control-label">Middle</label>
+              <input class="form-control input-sm" type="text" ng-model="rentalApplicationForm.middle" placeholder="Middle" required>
+            </div>
+          </div>
+          <div class="col-xs-6 col-md-3">
+            <div class="form-group">
+              <label class="control-label">Last</label>
+              <input class="form-control input-sm" type="text" ng-model="rentalApplicationForm.last" placeholder="Last" required>
+            </div>
+          </div>
+          <div class="col-xs-6 col-md-3">
+            <div class="form-group">
+              <label class="control-label">S.S.#</label>
+              <input class="form-control input-sm" type="text" ng-model="rentalApplicationForm.ssn" placeholder="S.S.#" required>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-6 col-md-3">
+            <div class="form-group">
+              <label class="control-label">Date of Birth</label>
+              <input class="form-control input-sm" type="text" ng-model="rentalApplicationForm.dateOfBirth" placeholder="Date of Birth" required>
+            </div>
+          </div>
+          <div class="col-xs-6 col-md-6">
+            <div class="form-group">
+              <label class="control-label">Renting with other Tenants if so, who?</label>
+              <input class="form-control input-sm" type="text" ng-model="rentalApplicationForm.who" placeholder="Renting with other Tenants if so, who?" required>
+            </div>
+          </div>
+          <div class="col-xs-6 col-md-3">
+            <div class="form-group">
+              <label class="control-label">Drivers License #</label>
+              <input class="form-control input-sm" type="text" ng-model="rentalApplicationForm.driversLicense" placeholder="Drivers License #" required>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-6 col-md-3">
+            <div class="form-group">
+              <label class="control-label">Phone Cell</label>
+              <input class="form-control input-sm" type="text" ng-model="rentalApplicationForm.phoneCell" placeholder="Phone Cell" required>
+            </div>
+          </div>
+          <div class="col-xs-6 col-md-3">
+            <div class="form-group">
+              <label class="control-label">Phone Work</label>
+              <input class="form-control input-sm" type="text" ng-model="rentalApplicationForm.phoneWork" placeholder="Phone Work" required>
+            </div>
+          </div>
+          <div class="col-xs-6 col-md-3">
+            <div class="form-group">
+              <label class="control-label">Work Ext</label>
+              <input class="form-control input-sm" type="text" ng-model="rentalApplicationForm.workExt" placeholder="Work Ext" required>
+            </div>
+          </div>
+          <div class="col-xs-6 col-md-3">
+            <div class="form-group">
+              <label class="control-label">Email</label>
+              <input class="form-control input-sm" type="email" ng-model="rentalApplicationForm.email" placeholder="Email" required>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-6 col-md-6">
+            <div class="form-group">
+              <label class="control-label">Present Home Address</label>
+              <input class="form-control input-sm" type="text" ng-model="rentalApplicationForm.presentHomeAddress" placeholder="Present Home Address" required>
+            </div>
+          </div>
+          <div class="col-xs-6 col-md-2">
+            <div class="form-group">
+              <label class="control-label">City</label>
+              <input class="form-control input-sm" type="text" ng-model="rentalApplicationForm.city" placeholder="City" required>
+            </div>
+          </div>
+          <div class="col-xs-6 col-md-2">
+            <div class="form-group">
+              <label class="control-label">State</label>
+              <input class="form-control input-sm" type="text" ng-model="rentalApplicationForm.state" placeholder="State" required>
+            </div>
+          </div>
+          <div class="col-xs-6 col-md-2">
+            <div class="form-group">
+              <label class="control-label">ZIP</label>
+              <input class="form-control input-sm" type="text" ng-model="rentalApplicationForm.zip" placeholder="ZIP" required>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-6 col-md-4">
+            <div class="form-group">
+              <label class="control-label">Length of Time</label>
+              <input class="form-control input-sm" type="text" ng-model="rentalApplicationForm.lengthOfTime" placeholder="Length of Time" required>
+            </div>
+          </div>
+          <div class="col-xs-6 col-md-5">
+            <div class="form-group">
+              <label class="control-label">Present Landlord</label>
+              <input class="form-control input-sm" type="text" ng-model="rentalApplicationForm.presentLandlord" placeholder="Present Landlord" required>
+            </div>
+          </div>
+          <div class="col-xs-6 col-md-3">
+            <div class="form-group">
+              <label class="control-label">Landlord Phone</label>
+              <input class="form-control input-sm" type="text" ng-model="rentalApplicationForm.landlordPhone" placeholder="Landlord Phone" required>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-6 col-md-6">
+            <div class="form-group">
+              <label class="control-label">Reason for Leaving</label>
+              <input class="form-control input-sm" type="text" ng-model="rentalApplicationForm.reasonForLeaving" placeholder="Reason for Leaving" required>
+            </div>
+          </div>
+          <div class="col-xs-6 col-md-3">
+            <div class="form-group">
+              <label class="control-label">Amount of Rent</label>
+              <input class="form-control input-sm" type="text" ng-model="rentalApplicationForm.amountOfRent" placeholder="Amount of Rent" required>
+            </div>
+          </div>
+          <div class="col-xs-6 col-md-3">
+            <div class="form-group">
+              <label class="control-label">Is your present rent up to date?</label>
+              <input class="form-control input-sm" type="text" ng-model="rentalApplicationForm.isPresentUpDate" placeholder="Is your present rent up to date?" required>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-6 col-md-6">
+            <div class="form-group">
+              <label class="control-label">Previous Home Address</label>
+              <input class="form-control input-sm" type="text" ng-model="rentalApplicationForm.previousHomeAddress" placeholder="Previous Home Address" required>
+            </div>
+          </div>
+          <div class="col-xs-6 col-md-2">
+            <div class="form-group">
+              <label class="control-label">City</label>
+              <input class="form-control input-sm" type="text" ng-model="rentalApplicationForm.previousCity" placeholder="City" required>
+            </div>
+          </div>
+          <div class="col-xs-6 col-md-2">
+            <div class="form-group">
+              <label class="control-label">State</label>
+              <input class="form-control input-sm" type="text" ng-model="rentalApplicationForm.previousState" placeholder="State" required>
+            </div>
+          </div>
+          <div class="col-xs-6 col-md-2">
+            <div class="form-group">
+              <label class="control-label">ZIP</label>
+              <input class="form-control input-sm" type="text" ng-model="rentalApplicationForm.previousZip" placeholder="ZIP" required>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-6 col-md-4">
+            <div class="form-group">
+              <label class="control-label">Length of Time</label>
+              <input class="form-control input-sm" type="text" ng-model="rentalApplicationForm.previousLengthOfTime" placeholder="Length of Time" required>
+            </div>
+          </div>
+          <div class="col-xs-6 col-md-5">
+            <div class="form-group">
+              <label class="control-label">Previous Landlord</label>
+              <input class="form-control input-sm" type="text" ng-model="rentalApplicationForm.previousLandlord" placeholder="Previous Landlord" required>
+            </div>
+          </div>
+          <div class="col-xs-6 col-md-3">
+            <div class="form-group">
+              <label class="control-label">Landlord Phone</label>
+              <input class="form-control input-sm" type="text" ng-model="rentalApplicationForm.previousLandlordPhone" placeholder="Landlord Phone" required>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-6 col-md-6">
+            <div class="form-group">
+              <label class="control-label">Reason for Leaving</label>
+              <input class="form-control input-sm" type="text" ng-model="rentalApplicationForm.previousReasonForLeaving" placeholder="Reason for Leaving" required>
+            </div>
+          </div>
+          <div class="col-xs-6 col-md-3">
+            <div class="form-group">
+              <label class="control-label">Amount of Rent</label>
+              <input class="form-control input-sm" type="text" ng-model="rentalApplicationForm.previousAmountOfRent" placeholder="Amount of Rent" required>
+            </div>
+          </div>
+          <div class="col-xs-6 col-md-3">
+            <div class="form-group">
+              <label class="control-label">Was your rent up to date?</label>
+              <input class="form-control input-sm" type="text" ng-model="rentalApplicationForm.wasRentUpDate" placeholder="Was your rent up to date?" required>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-6 col-md-6">
+            <div class="form-group">
+              <label class="control-label">Next Previous Home Address</label>
+              <input class="form-control input-sm" type="text" ng-model="rentalApplicationForm.nextPreviousHomeAddress" placeholder="Next Previous Home Address" required>
+            </div>
+          </div>
+          <div class="col-xs-6 col-md-2">
+            <div class="form-group">
+              <label class="control-label">City</label>
+              <input class="form-control input-sm" type="text" ng-model="rentalApplicationForm.nextCity" placeholder="City" required>
+            </div>
+          </div>
+          <div class="col-xs-6 col-md-2">
+            <div class="form-group">
+              <label class="control-label">State</label>
+              <input class="form-control input-sm" type="text" ng-model="rentalApplicationForm.nextState" placeholder="State" required>
+            </div>
+          </div>
+          <div class="col-xs-6 col-md-2">
+            <div class="form-group">
+              <label class="control-label">ZIP</label>
+              <input class="form-control input-sm" type="text" ng-model="rentalApplicationForm.nextZip" placeholder="ZIP" required>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-6 col-md-4">
+            <div class="form-group">
+              <label class="control-label">Length of Time</label>
+              <input class="form-control input-sm" type="text" ng-model="rentalApplicationForm.nextLengthOfTime" placeholder="Length of Time" required>
+            </div>
+          </div>
+          <div class="col-xs-6 col-md-5">
+            <div class="form-group">
+              <label class="control-label">Next Previous Landlord</label>
+              <input class="form-control input-sm" type="text" ng-model="rentalApplicationForm.nextPreviousLandlord" placeholder="Next Previous Landlord" required>
+            </div>
+          </div>
+          <div class="col-xs-6 col-md-3">
+            <div class="form-group">
+              <label class="control-label">Landlord Phone</label>
+              <input class="form-control input-sm" type="text" ng-model="rentalApplicationForm.nextLandlordPhone" placeholder="Landlord Phone" required>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-6 col-md-6">
+            <div class="form-group">
+              <label class="control-label">Reason for Leaving</label>
+              <input class="form-control input-sm" type="text" ng-model="rentalApplicationForm.nextReasonForLeaving" placeholder="Reason for Leaving" required>
+            </div>
+          </div>
+          <div class="col-xs-6 col-md-3">
+            <div class="form-group">
+              <label class="control-label">Amount of Rent</label>
+              <input class="form-control input-sm" type="text" ng-model="rentalApplicationForm.nextAmountOfRent" placeholder="Amount of Rent" required>
+            </div>
+          </div>
+          <div class="col-xs-6 col-md-3">
+            <div class="form-group">
+              <label class="control-label">Was your rent up to date?</label>
+              <input class="form-control input-sm" type="text" ng-model="rentalApplicationForm.nextWasRentUpDate" placeholder="Was your rent up to date?" required>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="panel panel-primary">
+      <div class="panel-heading btn-add-row">
+        <div class="row">
+          <div class="col-md-6">
+            <h3 class="panel-title proposed-title">PROPOSED OCCUPANT(S)</h3>
+          </div>
+          <div class="col-md-6 text-right">
+            <button class="btn btn-success btn-sm" ng-click="addProposedOccupant()"><i class="fa fa-plus fa-fw"></i>Add Row</button>
+          </div>
+        </div>
+      </div>
+      <div class="panel-body">
+        <div class="row" ng-repeat="occupant in occupants">
+          <hr ng-hide="occupant.number == 1">
+          <div class="col-xs-6 col-md-3">
+            <div class="form-group">
+              <label class="control-label">Name</label>
+              <input class="form-control input-sm" type="text" ng-model="rentalApplicationForm.proposedOccupant[occupant.number].name" placeholder="Name" required>
+            </div>
+          </div>
+          <div class="col-xs-6 col-md-3">
+            <div class="form-group">
+              <label class="control-label">Relationship</label>
+              <input class="form-control input-sm" type="text" ng-model="rentalApplicationForm.proposedOccupant[occupant.number].relationship" placeholder="Relationship" required>
+            </div>
+          </div>
+          <div class="col-xs-6 col-md-3">
+            <div class="form-group">
+              <label class="control-label">Occupation</label>
+              <input class="form-control input-sm" type="text" ng-model="rentalApplicationForm.proposedOccupant[occupant.number].occupation" placeholder="Occupation" required>
+            </div>
+          </div>
+          <div class="col-xs-6 col-md-2">
+            <div class="form-group">
+              <label class="control-label">Age</label>
+              <input class="form-control input-sm" type="text" ng-model="rentalApplicationForm.proposedOccupant[occupant.number].age" placeholder="Age" required>
+            </div>
+          </div>
+          <div class="col-xs-6 col-md-1">
+            <button class="btn btn-danger btn-sm btn-block btn-delete-proposed" ng-click="deleteProposedOccupant($index)"><i class="fa fa-remove"></i>Delete</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="panel panel-primary">
+      <div class="panel-heading btn-add-row">
+        <div class="row">
+          <div class="col-md-6">
+            <h3 class="panel-title proposed-title">PROPOSED PET(S)</h3>
+          </div>
+          <div class="col-md-6 text-right">
+            <button class="btn btn-success btn-sm" ng-click="addProposedPet()"><i class="fa fa-plus fa-fw"></i>Add Row</button>
+          </div>
+        </div>
+      </div>
+      <div class="panel-body">
+        <div class="row" ng-repeat="pet in pets">
+          <hr ng-hide="pet.number == 1">
+          <div class="col-xs-6 col-md-3">
+            <div class="form-group">
+              <label class="control-label">Name</label>
+              <input class="form-control input-sm" type="text" ng-model="rentalApplicationForm.proposedPet[pet.number].name" placeholder="Name" required>
+            </div>
+          </div>
+          <div class="col-xs-6 col-md-3">
+            <div class="form-group">
+              <label class="control-label">Type/Breed</label>
+              <input class="form-control input-sm" type="text" ng-model="rentalApplicationForm.proposedPet[pet.number].typeBreed" placeholder="Type/Breed" required>
+            </div>
+          </div>
+          <div class="col-xs-6 col-md-3">
+            <div class="row" style="padding-top:20px;">
+              <div class="col-md-6">
+                <div class="radio radio-indoor">
+                  <label class="radio-label">
+                    <input type="radio" name="doorStatus">
+                    <span class="cr"><i class="cr-icon fa fa-circle"></i></span>
+                    Indoor
+                  </label>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="radio radio-outdoor">
+                  <label class="radio-label">
+                    <input type="radio" name="doorStatus">
+                    <span class="cr"><i class="cr-icon fa fa-circle"></i></span>
+                    Outdoor
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-6 col-md-2">
+            <div class="form-group">
+              <label class="control-label">Age</label>
+              <input class="form-control input-sm" type="text" ng-model="rentalApplicationForm.proposedPet[pet.number].age" placeholder="Age" required>
+            </div>
+          </div>
+          <div class="col-xs-6 col-md-1">
+            <button class="btn btn-danger btn-sm btn-block btn-delete-proposed" ng-click="deleteProposedPet($index)"><i class="fa fa-remove"></i>Delete</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="panel panel-primary">
+      <div class="panel-heading btn-add-row">
+        <div class="row">
+          <div class="col-md-6">
+            <h3 class="panel-title proposed-title">VEHICLE(S) INFORMATION</h3>
+          </div>
+          <div class="col-md-6 text-right">
+            <button class="btn btn-success btn-sm" ng-click="addVeicleInfo()"><i class="fa fa-plus fa-fw"></i>Add Row</button>
+          </div>
+        </div>
+      </div>
+      <div class="panel-body">
+        <div class="row" ng-repeat="vehicle in vehicles">
+          <hr ng-hide="vehicle.number == 1">
+          <div class="col-xs-6 col-md-2">
+            <div class="form-group">
+              <label class="control-label">Year</label>
+              <input class="form-control input-sm" type="text" ng-model="rentalApplicationForm.veicleInfo[vehicle.number].year" placeholder="Year" required>
+            </div>
+          </div>
+          <div class="col-xs-6 col-md-2">
+            <div class="form-group">
+              <label class="control-label">Make</label>
+              <input class="form-control input-sm" type="text" ng-model="rentalApplicationForm.veicleInfo[vehicle.number].make" placeholder="Make" required>
+            </div>
+          </div>
+          <div class="col-xs-6 col-md-2">
+            <div class="form-group">
+              <label class="control-label">Model</label>
+              <input class="form-control input-sm" type="text" ng-model="rentalApplicationForm.veicleInfo[vehicle.number].model" placeholder="Model" required>
+            </div>
+          </div>
+          <div class="col-xs-6 col-md-2">
+            <div class="form-group">
+              <label class="control-label">Color</label>
+              <input class="form-control input-sm" type="text" ng-model="rentalApplicationForm.veicleInfo[vehicle.number].color" placeholder="Color" required>
+            </div>
+          </div>
+          <div class="col-xs-6 col-md-2">
+            <div class="form-group">
+              <label class="control-label">Plate #</label>
+              <input class="form-control input-sm" type="text" ng-model="rentalApplicationForm.veicleInfo[vehicle.number].plate" placeholder="Plate #" required>
+            </div>
+          </div>
+          <div class="col-xs-6 col-md-1">
+            <div class="form-group">
+              <label class="control-label">State</label>
+              <input class="form-control input-sm" type="text" ng-model="rentalApplicationForm.veicleInfo[vehicle.number].state" placeholder="State" required>
+            </div>
+          </div>
+          <div class="col-xs-6 col-md-1">
+            <button class="btn btn-danger btn-sm btn-block btn-delete-proposed" ng-click="deleteVeicleInfo($index)"><i class="fa fa-remove"></i>Delete</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="panel panel-primary">
+      <div class="panel-heading btn-add-row">
+        <div class="row">
+          <div class="col-md-6">
+            <h3 class="panel-title proposed-title">EMPLOYMENT</h3>
+          </div>
+          <div class="col-md-6 text-right">
+            <button class="btn btn-success btn-sm" ng-click="addEmployment()"><i class="fa fa-plus fa-fw"></i>Add Row</button>
+          </div>
+        </div>
+      </div>
+      <div class="panel-body">
+        <div class="row" ng-repeat="employment in employments">
+          <hr ng-hide="employment.number == 1">
+          <div class="col-xs-11 col-md-11">
+            <div class="row">
+              <div class="col-xs-6 col-md-5">
+                <div class="form-group">
+                  <label class="control-label">Current Employment</label>
+                  <input class="form-control input-sm" type="text" ng-model="rentalApplicationForm.employment[employment.number].currentEmployment" placeholder="Current Employment" required>
+                </div>
+              </div>
+              <div class="col-xs-6 col-md-5">
+                <div class="form-group">
+                  <label class="control-label">Occupation</label>
+                  <input class="form-control input-sm" type="text" ng-model="rentalApplicationForm.employment[employment.number].occupation" placeholder="Occupation" required>
+                </div>
+              </div>
+              <div class="col-xs-6 col-md-2">
+                <div class="form-group">
+                  <label class="control-label">Hours/Week</label>
+                  <input class="form-control input-sm" type="text" ng-model="rentalApplicationForm.employment[employment.number].hoursWeek" placeholder="Hours/Week" required>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-xs-6 col-md-5">
+                <div class="form-group">
+                  <label class="control-label">Supervisor</label>
+                  <input class="form-control input-sm" type="text" ng-model="rentalApplicationForm.employment[employment.number].supervisor" placeholder="Supervisor" required>
+                </div>
+              </div>
+              <div class="col-xs-6 col-md-3">
+                <div class="form-group">
+                  <label class="control-label">Phone</label>
+                  <input class="form-control input-sm" type="text" ng-model="rentalApplicationForm.employment[employment.number].phone" placeholder="Phone" required>
+                </div>
+              </div>
+              <div class="col-xs-6 col-md-2">
+                <div class="form-group">
+                  <label class="control-label">EXT:</label>
+                  <input class="form-control input-sm" type="text" ng-model="rentalApplicationForm.employment[employment.number].ext" placeholder="EXT:" required>
+                </div>
+              </div>
+              <div class="col-xs-6 col-md-2">
+                <div class="form-group">
+                  <label class="control-label">Years Employed</label>
+                  <input class="form-control input-sm" type="text" ng-model="rentalApplicationForm.employment[employment.number].yearsEmployed" placeholder="Years Employed" required>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-xs-6 col-md-6">
+                <div class="form-group">
+                  <label class="control-label">Address</label>
+                  <input class="form-control input-sm" type="text" ng-model="rentalApplicationForm.employment[employment.number].address" placeholder="Address" required>
+                </div>
+              </div>
+              <div class="col-xs-6 col-md-2">
+                <div class="form-group">
+                  <label class="control-label">City</label>
+                  <input class="form-control input-sm" type="text" ng-model="rentalApplicationForm.employment[employment.number].city" placeholder="City" required>
+                </div>
+              </div>
+              <div class="col-xs-6 col-md-2">
+                <div class="form-group">
+                  <label class="control-label">State</label>
+                  <input class="form-control input-sm" type="text" ng-model="rentalApplicationForm.employment[employment.number].state" placeholder="State" required>
+                </div>
+              </div>
+              <div class="col-xs-6 col-md-2">
+                <div class="form-group">
+                  <label class="control-label">ZIP</label>
+                  <input class="form-control input-sm" type="text" ng-model="rentalApplicationForm.employment[employment.number].zip" placeholder="ZIP" required>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-1 col-md-1">
+            <button class="btn btn-danger btn-sm btn-block btn-delete-employment" ng-click="deleteEmployment($index)"><i class="fa fa-remove"></i>Delete</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="panel panel-primary">
+      <div class="panel-heading btn-add-row">
+        <div class="row">
+          <div class="col-md-6">
+            <h3 class="panel-title proposed-title">INCOME</h3>
+          </div>
+          <div class="col-md-6 text-right">
+            <button class="btn btn-success btn-sm" ng-click="addIncome()"><i class="fa fa-plus fa-fw"></i>Add Row</button>
+          </div>
+        </div>
+      </div>
+      <div class="panel-body">
+        <div class="row" ng-repeat="income in incomes">
+          <hr ng-hide="income.number == 1">
+          <div class="col-xs-11 col-md-11">
+            <div class="row">
+              <div class="col-xs-6 col-md-5">
+                <div class="form-group">
+                  <label class="control-label">Current Income</label>
+                  <input class="form-control input-sm" type="text" ng-model="rentalApplicationForm.income[income.number].currentEmployment" placeholder="Current Income" required>
+                </div>
+              </div>
+              <div class="col-xs-6 col-md-5">
+                <div class="form-group">
+                  <label class="control-label">Source</label>
+                  <input class="form-control input-sm" type="text" ng-model="rentalApplicationForm.income[income.number].source" placeholder="Source" required>
+                </div>
+              </div>
+              <div class="col-xs-6 col-md-2">
+                <div class="form-group">
+                  <label class="control-label">Proof of Income</label>
+                  <input class="form-control input-sm" type="text" ng-model="rentalApplicationForm.income[income.number].proofIncome" placeholder="Proof of Income" required>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-1 col-md-1">
+            <button class="btn btn-danger btn-sm btn-block btn-delete-proposed" ng-click="deleteIncome($index)"><i class="fa fa-remove"></i>Delete</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="row">
+        <div class="col-xs-6 col-md-2 col-md-offset-4">
+          <button type="submit" class="btn btn-success btn-block"><i class="fa fa-check"></i>&nbsp;Submit</button>
+        </div>
+        <div class="col-xs-6 col-md-2">
+          <a class="btn btn-danger btn-block"><i class="fa fa-ban"></i>&nbsp;Cancel</a>
+        </div>
+      </div>
+    </div>
+    <br><br><br>
+  </form>
+</div>

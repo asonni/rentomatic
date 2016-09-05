@@ -15,7 +15,7 @@ var paths = {
   backEndScripts: ['./routes/**/*.js','app.js']
 };
 
-gulp.task('default',['html','styles','scripts','start','watch']);
+gulp.task('default',['styles','scripts','html','start','watch']);
 
 gulp.task('start',function(){
   req.nodemon({
@@ -28,44 +28,41 @@ gulp.task('start',function(){
 });
  
 gulp.task('html',function(){
-  gulp.src(paths.html)
-  .on('error',errorLog)
-  .pipe(req.rename({suffix:'-min'}))
-  .pipe(req.htmlhint())
-  .pipe(req.htmlhint.reporter("htmlhint-stylish"))
-  // .pipe(req.htmlhint.failReporter({suppress:true})) // if you want to your task to fail on error(s)
-  .pipe(req.htmlmin({collapseWhitespace: true}))
-  .pipe(gulp.dest('./views/'));
+  return gulp.src(paths.html)
+    .on('error',errorLog)
+    .pipe(req.rename({suffix:'-min'}))
+    .pipe(req.htmlhint())
+    .pipe(req.htmlhint.reporter("htmlhint-stylish"))
+    .pipe(req.htmlmin({collapseWhitespace: true}))
+    .pipe(gulp.dest('./views/'));
 });
 
 gulp.task('styles',function(){
-  gulp.src(paths.styles)
-  .pipe(req.rename({suffix:'.min'}))
-  .pipe(req.cleanCss())
-  .pipe(req.plumber())
-  .pipe(req.autoprefixer('last 2 versions'))
-  .pipe(gulp.dest('./public/'));
+  return gulp.src(paths.styles)
+    .pipe(req.rename({suffix:'.min'}))
+    .pipe(req.cleanCss())
+    .pipe(req.plumber())
+    .pipe(req.autoprefixer('last 2 versions'))
+    .pipe(gulp.dest('./public/'));
 });
 
 gulp.task('scripts',function(){
-  gulp.src(paths.scripts)
-  .pipe(req.jshint())
-  .pipe(req.jshint.reporter('jshint-stylish',{beep:true}))
-  .pipe(req.jshint.reporter('fail'))
-  .on('error',function(){this.emit('end');})
-  .pipe(req.rename({suffix:'.min'}))
-  .pipe(req.uglify())
-  .pipe(gulp.dest('./public/'));
+  return gulp.src(paths.scripts)
+    .pipe(req.jshint())
+    .pipe(req.jshint.reporter('jshint-stylish',{beep:true}))
+    .pipe(req.jshint.reporter('fail'))
+    .on('error',errorLog)
+    .pipe(req.rename({suffix:'.min'}))
+    .pipe(req.uglify())
+    .pipe(gulp.dest('./public/'));
 });
 
 gulp.task('backEndScripts',function(){
-  gulp.src(paths.backEndScripts)
-  .pipe(req.jshint())
-  .pipe(req.jshint.reporter('jshint-stylish',{beep:true}))
-  .pipe(req.jshint.reporter('fail'))
-  .on('error',function(){
-    this.emit('end');
-  });
+  return gulp.src(paths.backEndScripts)
+    .pipe(req.jshint())
+    .pipe(req.jshint.reporter('jshint-stylish',{beep:true}))
+    .pipe(req.jshint.reporter('fail'))
+    .on('error',errorLog);
 });
 
 gulp.task('watch',function(){

@@ -1,18 +1,26 @@
 <!DOCTYPE html>
-<html ng-app="rentomatic">
+<html lang="en" ng-app="rentomatic">
   <head>
-    <title><%= title %></title>
-    <link rel="stylesheet" href="/bootstrap/dist/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="/font-awesome/css/font-awesome.min.css" />
-    <link rel="stylesheet" href="/css/style.min.css" />
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Express</title>
+    <link rel="stylesheet" href="/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/angular-ui-view-spinner/src/angular-ui-view-spinner.css">
+    <link rel="stylesheet" href="/angular-ui-router-anim-in-out/css/anim-in-out.css">
+    <link rel="stylesheet" href="/css/style.min.css">
   </head>
   <body>
-    <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
+    <!-- <h1><%= title %></h1>
+    <p>Welcome to <%= title %></p> -->
     <div class="container">
       <div class="row">
         <div class="col-lg-12">
-          <div ui-view class="fade-in-up"></div>
+          <img src="/img/rentomatic_full.png" class="img-responsive center-block" alt="Responsive image">
+          <br>
+          <div id="main" ui-view class="anim-in-out anim-fade" data-anim-speed="{{ctrl.speed}}" data-anim-sync="{{ctrl.sync}}"></div>        
+          <!-- <ui-loading-view root-state="results"></ui-loading-view> -->
         </div>
       </div>
     </div>
@@ -20,6 +28,10 @@
     <script src="/angular-animate/angular-animate.min.js"></script>
     <script src="/angular-ui-router/release/angular-ui-router.min.js"></script>
     <script src="/oclazyload/dist/ocLazyLoad.min.js"></script>
+    <script src="/spin.js/spin.js"></script>
+    <script src="/angular-spinner/angular-spinner.min.js"></script>
+    <script src="/angular-ui-view-spinner/src/angular-ui-view-spinner.js"></script>
+    <script src="angular-ui-router-anim-in-out/anim-in-out.js"></script>
     <script src="/js/app.min.js"></script>
     <script id="ng_load_plugins_here"></script>
   </body>
