@@ -6,9 +6,10 @@
     'oc.lazyLoad',
     'angularSpinner',
     'angular-ui-view-spinner',
-    'anim-in-out'
+    'anim-in-out',
+    'jcs-autoValidate'
   ])
-  .run(['$rootScope',function($rootScope) {
+  .run(['$rootScope','bootstrap3ElementModifier',function($rootScope,bootstrap3ElementModifier) {
     // you can inject any instance here
     $rootScope.ctrl = {
       'speed': 200,
@@ -16,6 +17,7 @@
       'formStyle': 'anim-slide-below-fade',
       'resultsStyle': 'anim-slide-below-fade'
     };
+    bootstrap3ElementModifier.enableValidationStateIcons(true);
   }])
   .config(['$stateProvider','$urlRouterProvider','$ocLazyLoadProvider',function($stateProvider,$urlRouterProvider,$ocLazyLoadProvider){
     $urlRouterProvider.otherwise('/');
