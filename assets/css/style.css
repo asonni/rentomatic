@@ -81,7 +81,7 @@ a {
   padding-top: 5px;
   padding-bottom: 5px;
 }
-.checkbox label:after, 
+/*.checkbox label:after, 
 .radio label:after {
   content: '';
   display: table;
@@ -130,8 +130,8 @@ a {
 .checkbox label input[type="checkbox"]:disabled + .cr,
 .radio label input[type="radio"]:disabled + .cr {
   opacity: .5;
-}
-.radio-indoor{
+}*/
+/*.radio-indoor{
   margin-left: 20px;
 }
 .radio-outdoor{
@@ -140,4 +140,4 @@ a {
 .radio-label{
   font-size:1em;
   font-weight:bold !important;
-}
+}*/

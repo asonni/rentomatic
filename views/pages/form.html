@@ -284,13 +284,12 @@
             <h3 class="panel-title proposed-title">PROPOSED OCCUPANT(S)</h3>
           </div>
           <div class="col-md-6 text-right">
-            <button class="btn btn-success btn-sm" ng-click="addProposedOccupant()"><i class="fa fa-plus fa-fw"></i>Add Row</button>
+            <button type="button" class="btn btn-success btn-sm" ng-click="addProposedOccupant()"><i class="fa fa-plus fa-fw"></i>Add Row</button>
           </div>
         </div>
       </div>
       <div class="panel-body">
         <div class="row" ng-repeat="occupant in occupants">
-          <hr ng-hide="occupant.number == 1">
           <div class="col-xs-6 col-md-3">
             <div class="form-group">
               <label class="control-label">Name</label>
@@ -316,7 +315,7 @@
             </div>
           </div>
           <div class="col-xs-6 col-md-1">
-            <button class="btn btn-danger btn-sm btn-block btn-delete-proposed" ng-click="deleteProposedOccupant($index)"><i class="fa fa-remove"></i>Delete</button>
+            <button type="button" class="btn btn-danger btn-sm btn-block btn-delete-proposed" ng-click="deleteProposedOccupant($index)"><i class="fa fa-remove"></i>Delete</button>
           </div>
         </div>
       </div>
@@ -328,13 +327,12 @@
             <h3 class="panel-title proposed-title">PROPOSED PET(S)</h3>
           </div>
           <div class="col-md-6 text-right">
-            <button class="btn btn-success btn-sm" ng-click="addProposedPet()"><i class="fa fa-plus fa-fw"></i>Add Row</button>
+            <button type="button" class="btn btn-success btn-sm" ng-click="addProposedPet()"><i class="fa fa-plus fa-fw"></i>Add Row</button>
           </div>
         </div>
       </div>
       <div class="panel-body">
         <div class="row" ng-repeat="pet in pets">
-          <hr ng-hide="pet.number == 1">
           <div class="col-xs-6 col-md-3">
             <div class="form-group">
               <label class="control-label">Name</label>
@@ -347,25 +345,17 @@
               <input class="form-control input-sm" type="text" ng-model="rentalApplicationForm.proposedPet[pet.number].type" placeholder="Type/Breed" required>
             </div>
           </div>
-          <div class="col-xs-6 col-md-3">
-            <div class="row" style="padding-top:20px;">
-              <div class="col-md-6">
-                <div class="radio radio-indoor">
-                  <label class="radio-label">
-                    <input type="radio" name="doorStatus" ng-model="rentalApplicationForm.proposedPet[pet.number].indoor" value="indoor">
-                    <span class="cr"><i class="cr-icon fa fa-circle"></i></span>
-                    Indoor
-                  </label>
-                </div>
-              </div>
-              <div class="col-md-6">
-                <div class="radio radio-outdoor">
-                  <label class="radio-label">
-                    <input type="radio" name="doorStatus" ng-model="rentalApplicationForm.proposedPet[pet.number].indoor" value="outdoor">
-                    <span class="cr"><i class="cr-icon fa fa-circle"></i></span>
-                    Outdoor
-                  </label>
-                </div>
+          <div class="col-xs-6 col-md-3 text-center" style="padding-top:12px;">
+            <div class="form-group">
+              <div class="radio" style="padding-top: 8px;">
+                <label style="padding-right: 30px;">
+                  <input type="radio" name="doorStatus" value="indoor" ng-model="rentalApplicationForm.proposedPet[pet.number].indoor" required>
+                  <b>Indoor</b>
+                </label>
+                <label>
+                  <input type="radio" name="doorStatus" value="outdoor" ng-model="rentalApplicationForm.proposedPet[pet.number].indoor" required>
+                  <b>Outdoor</b>
+                </label>
               </div>
             </div>
           </div>
@@ -376,7 +366,7 @@
             </div>
           </div>
           <div class="col-xs-6 col-md-1">
-            <button class="btn btn-danger btn-sm btn-block btn-delete-proposed" ng-click="deleteProposedPet($index)"><i class="fa fa-remove"></i>Delete</button>
+            <button type="button" class="btn btn-danger btn-sm btn-block btn-delete-proposed" ng-click="deleteProposedPet($index)"><i class="fa fa-remove"></i>Delete</button>
           </div>
         </div>
       </div>
@@ -388,13 +378,12 @@
             <h3 class="panel-title proposed-title">VEHICLE(S) INFORMATION</h3>
           </div>
           <div class="col-md-6 text-right">
-            <button class="btn btn-success btn-sm" ng-click="addVeicleInfo()"><i class="fa fa-plus fa-fw"></i>Add Row</button>
+            <button type="button" class="btn btn-success btn-sm" ng-click="addVeicleInfo()"><i class="fa fa-plus fa-fw"></i>Add Row</button>
           </div>
         </div>
       </div>
       <div class="panel-body">
         <div class="row" ng-repeat="vehicle in vehicles">
-          <hr ng-hide="vehicle.number == 1">
           <div class="col-xs-6 col-md-2">
             <div class="form-group">
               <label class="control-label">Year</label>
@@ -432,7 +421,7 @@
             </div>
           </div>
           <div class="col-xs-6 col-md-1">
-            <button class="btn btn-danger btn-sm btn-block btn-delete-proposed" ng-click="deleteVeicleInfo($index)"><i class="fa fa-remove"></i>Delete</button>
+            <button type="button" class="btn btn-danger btn-sm btn-block btn-delete-proposed" ng-click="deleteVeicleInfo($index)"><i class="fa fa-remove"></i>Delete</button>
           </div>
         </div>
       </div>
@@ -444,13 +433,12 @@
             <h3 class="panel-title proposed-title">EMPLOYMENT</h3>
           </div>
           <div class="col-md-6 text-right">
-            <button class="btn btn-success btn-sm" ng-click="addEmployment()"><i class="fa fa-plus fa-fw"></i>Add Row</button>
+            <button type="button" class="btn btn-success btn-sm" ng-click="addEmployment()"><i class="fa fa-plus fa-fw"></i>Add Row</button>
           </div>
         </div>
       </div>
       <div class="panel-body">
         <div class="row" ng-repeat="employment in employments">
-          <hr ng-hide="employment.number == 1">
           <div class="col-xs-11 col-md-11">
             <div class="row">
               <div class="col-xs-6 col-md-5">
@@ -526,7 +514,7 @@
             </div>
           </div>
           <div class="col-xs-1 col-md-1">
-            <button class="btn btn-danger btn-sm btn-block btn-delete-employment" ng-click="deleteEmployment($index)"><i class="fa fa-remove"></i>Delete</button>
+            <button type="button" class="btn btn-danger btn-sm btn-block btn-delete-employment" ng-click="deleteEmployment($index)"><i class="fa fa-remove"></i>Delete</button>
           </div>
         </div>
       </div>
@@ -538,13 +526,12 @@
             <h3 class="panel-title proposed-title">INCOME</h3>
           </div>
           <div class="col-md-6 text-right">
-            <button class="btn btn-success btn-sm" ng-click="addIncome()"><i class="fa fa-plus fa-fw"></i>Add Row</button>
+            <button type="button" class="btn btn-success btn-sm" ng-click="addIncome()"><i class="fa fa-plus fa-fw"></i>Add Row</button>
           </div>
         </div>
       </div>
       <div class="panel-body">
         <div class="row" ng-repeat="income in incomes">
-          <hr ng-hide="income.number == 1">
           <div class="col-xs-11 col-md-11">
             <div class="row">
               <div class="col-xs-6 col-md-5">
@@ -568,7 +555,7 @@
             </div>
           </div>
           <div class="col-xs-1 col-md-1">
-            <button class="btn btn-danger btn-sm btn-block btn-delete-proposed" ng-click="deleteIncome($index)"><i class="fa fa-remove"></i>Delete</button>
+            <button type="button" class="btn btn-danger btn-sm btn-block btn-delete-proposed" ng-click="deleteIncome($index)"><i class="fa fa-remove"></i>Delete</button>
           </div>
         </div>
       </div>
