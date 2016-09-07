@@ -1,8 +1,12 @@
+/*@import url("https://fonts.googleapis.com/css?family=Lato:400,700,400italic");*/
+/*@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,700");*/
 body {
   padding: 10px;
   /*font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;*/
-  font-family: "Helvetica Neue", Helvetica, Arial, "Liberation Sans", FreeSans, sans-serif;
-  /*font-weight: 400;*/
+  /*font-family: "Helvetica Neue", Helvetica, Arial, "Liberation Sans", FreeSans, sans-serif;*/
+  /*font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;*/
+  /*font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;*/
+  /*font-size: 14px;*/
 }
 a {
   color: #00B7FF;
@@ -26,7 +30,7 @@ a {
 .btn-delete-employment{
   margin-top: 95px;
 }
-/*.proposed-row {
+.proposed-row {
     opacity: 1;
 }
 .ng-enter {
@@ -50,7 +54,7 @@ a {
 }
 .ng-leave-active{
   opacity: 0;
-}*/
+}
 .ng-enter, 
 .ng-leave
 { 
@@ -130,7 +134,7 @@ a {
 .checkbox label input[type="checkbox"]:disabled + .cr,
 .radio label input[type="radio"]:disabled + .cr {
   opacity: .5;
-}*/
+}
 /*.radio-indoor{
   margin-left: 20px;
 }
@@ -141,3 +145,26 @@ a {
   font-size:1em;
   font-weight:bold !important;
 }*/
+textarea:focus,
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="datetime"]:focus,
+input[type="datetime-local"]:focus,
+input[type="date"]:focus,
+input[type="month"]:focus,
+input[type="time"]:focus,
+input[type="week"]:focus,
+input[type="number"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+input[type="search"]:focus,
+input[type="tel"]:focus,
+input[type="color"]:focus,
+.uneditable-input:focus {   
+  border-color: #005a8f;
+  /*box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(126, 239, 104, 0.6);*/
+  outline: 0 none;
+}
+.striped{
+  background-color: #f9f9f9;
+}

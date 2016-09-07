@@ -7,7 +7,8 @@
     'angularSpinner',
     'angular-ui-view-spinner',
     'anim-in-out',
-    'jcs-autoValidate'
+    'jcs-autoValidate',
+    'infinite-scroll'
   ])
   .run(['$rootScope','bootstrap3ElementModifier',function($rootScope,bootstrap3ElementModifier) {
     // you can inject any instance here
