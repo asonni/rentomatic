@@ -29,7 +29,8 @@
       'dateFormat': 'yyyy-MM-dd',
       'dateType': 'string',
       'startWeek': 1,
-      'autoclose': true
+      'autoclose': true,
+      'hasClear': true
     });
     $urlRouterProvider.otherwise('/');
     $stateProvider.state('results', {
