@@ -27,7 +27,7 @@
           <div class="col-xs-6 col-md-3">
             <div class="form-group">
               <label class="control-label">S.S.#</label>
-              <input class="form-control input-sm" type="text" ng-model="rentalApplicationForm.ssn" placeholder="S.S.#" required>
+              <input class="form-control input-sm" type="text" ng-model="rentalApplicationForm.ssn" mask="999-99-9999" placeholder="S.S.#" required>
             </div>
           </div>
         </div>
@@ -35,13 +35,7 @@
           <div class="col-xs-6 col-md-3">
             <div class="form-group">
               <label class="control-label">Date of Birth</label>
-              <input class="form-control input-sm" type="text" ng-model="rentalApplicationForm.dob" placeholder="Date of Birth" required>
-            </div>
-          </div>
-          <div class="col-xs-6 col-md-6">
-            <div class="form-group">
-              <label class="control-label">Renting with other Tenants if so, who?</label>
-              <input class="form-control input-sm" type="text" ng-model="rentalApplicationForm.who" placeholder="Renting with other Tenants if so, who?" required>
+              <input class="form-control input-sm" type="text" ng-model="rentalApplicationForm.dob" placeholder="Date of Birth" bs-datepicker required>
             </div>
           </div>
           <div class="col-xs-6 col-md-3">
@@ -50,30 +44,36 @@
               <input class="form-control input-sm" type="text" ng-model="rentalApplicationForm.dl" placeholder="Drivers License #" required>
             </div>
           </div>
+          <div class="col-xs-6 col-md-3">
+            <div class="form-group">
+              <label class="control-label">Phone Cell<small> Ex: +1(999)-999-9999</small></label>
+              <input class="form-control input-sm" type="text" ng-model="rentalApplicationForm.phonec" mask="+1(999)-999-9999" placeholder="Phone Cell" required>
+            </div>
+          </div>
+          <div class="col-xs-6 col-md-3">
+            <div class="form-group">
+              <label class="control-label">Phone Work<small> Ex: +1(999)-999-9999</small></label>
+              <input class="form-control input-sm" type="text" ng-model="rentalApplicationForm.phonew" mask="+1(999)-999-9999" placeholder="Phone Work" required>
+            </div>
+          </div>
         </div>
         <div class="row">
-          <div class="col-xs-6 col-md-3">
-            <div class="form-group">
-              <label class="control-label">Phone Cell</label>
-              <input class="form-control input-sm" type="text" ng-model="rentalApplicationForm.phonec" placeholder="Phone Cell" required>
-            </div>
-          </div>
-          <div class="col-xs-6 col-md-3">
-            <div class="form-group">
-              <label class="control-label">Phone Work</label>
-              <input class="form-control input-sm" type="text" ng-model="rentalApplicationForm.phonew" placeholder="Phone Work" required>
-            </div>
-          </div>
-          <div class="col-xs-6 col-md-3">
+          <div class="col-xs-6 col-md-4">
             <div class="form-group">
               <label class="control-label">Work Ext</label>
               <input class="form-control input-sm" type="text" ng-model="rentalApplicationForm.ext" placeholder="Work Ext" required>
             </div>
           </div>
-          <div class="col-xs-6 col-md-3">
+          <div class="col-xs-6 col-md-4">
             <div class="form-group">
               <label class="control-label">Email</label>
               <input class="form-control input-sm" type="email" ng-model="rentalApplicationForm.email" placeholder="Email" required>
+            </div>
+          </div>
+          <div class="col-xs-6 col-md-4">
+            <div class="form-group">
+              <label class="control-label">Credit Score</label>
+              <input class="form-control input-sm" type="text" ng-model="rentalApplicationForm.cscore" placeholder="Credit Score" required>
             </div>
           </div>
         </div>
@@ -118,8 +118,8 @@
           </div>
           <div class="col-xs-6 col-md-3">
             <div class="form-group">
-              <label class="control-label">Landlord Phone</label>
-              <input class="form-control input-sm" type="text" ng-model="rentalApplicationForm.llphone" placeholder="Landlord Phone" required>
+              <label class="control-label">Landlord Phone<small> Ex: +1(999)-999-9999</small></label>
+              <input class="form-control input-sm" type="text" ng-model="rentalApplicationForm.llphone" mask="+1(999)-999-9999" placeholder="Landlord Phone" required>
             </div>
           </div>
         </div>
@@ -130,16 +130,10 @@
               <input class="form-control input-sm" type="text" ng-model="rentalApplicationForm.rfl" placeholder="Reason for Leaving" required>
             </div>
           </div>
-          <div class="col-xs-6 col-md-3">
+          <div class="col-xs-6 col-md-6">
             <div class="form-group">
               <label class="control-label">Amount of Rent</label>
               <input class="form-control input-sm" type="text" ng-model="rentalApplicationForm.aor" placeholder="Amount of Rent" required>
-            </div>
-          </div>
-          <div class="col-xs-6 col-md-3">
-            <div class="form-group">
-              <label class="control-label">Is your present rent up to date?</label>
-              <input class="form-control input-sm" type="text" ng-model="rentalApplicationForm.isPresentUpDate" placeholder="Is your present rent up to date?" required>
             </div>
           </div>
         </div>
@@ -184,8 +178,8 @@
           </div>
           <div class="col-xs-6 col-md-3">
             <div class="form-group">
-              <label class="control-label">Landlord Phone</label>
-              <input class="form-control input-sm" type="text" ng-model="rentalApplicationForm.llphone2" placeholder="Landlord Phone" required>
+              <label class="control-label">Landlord Phone<small> Ex: +1(999)-999-9999</small></label>
+              <input class="form-control input-sm" type="text" ng-model="rentalApplicationForm.llphone2" mask="+1(999)-999-9999" placeholder="Landlord Phone" required>
             </div>
           </div>
         </div>
@@ -250,8 +244,8 @@
           </div>
           <div class="col-xs-6 col-md-3">
             <div class="form-group">
-              <label class="control-label">Landlord Phone</label>
-              <input class="form-control input-sm" type="text" ng-model="rentalApplicationForm.nextLandlordPhone" placeholder="Landlord Phone" required>
+              <label class="control-label">Landlord Phone<small> Ex: +1(999)-999-9999</small></label>
+              <input class="form-control input-sm" type="text" ng-model="rentalApplicationForm.nextLandlordPhone" mask="+1(999)-999-9999" placeholder="Landlord Phone" required>
             </div>
           </div>
         </div>
@@ -275,6 +269,14 @@
             </div>
           </div>
         </div>
+        <div class="row">
+          <div class="col-xs-6 col-md-6">
+            <div class="form-group">
+              <label class="control-label">If renting with other tenants</label>
+              <input class="form-control input-sm" type="text" ng-model="rentalApplicationForm.who" placeholder="If renting with other tenants, please link them to this application by adding their username" required>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
     <div class="panel panel-primary">
@@ -289,7 +291,7 @@
         </div>
       </div>
       <div class="panel-body">
-        <div class="row" ng-repeat="occupant in occupants" ng-class-even="'striped'">
+        <div class="row repeat-animate" ng-repeat="occupant in occupants" ng-class-even="'striped'">
           <div class="col-xs-6 col-md-3">
             <div class="form-group">
               <label class="control-label">Name</label>
@@ -332,7 +334,7 @@
         </div>
       </div>
       <div class="panel-body">
-        <div class="row" ng-repeat="pet in pets" ng-class-even="'striped'">
+        <div class="row repeat-animate" ng-repeat="pet in pets" ng-class-even="'striped'">
           <div class="col-xs-6 col-md-3">
             <div class="form-group">
               <label class="control-label">Name</label>
@@ -383,44 +385,50 @@
         </div>
       </div>
       <div class="panel-body">
-        <div class="row" ng-repeat="vehicle in vehicles" ng-class-even="'striped'">
-          <div class="col-xs-6 col-md-2">
-            <div class="form-group">
-              <label class="control-label">Year</label>
-              <input class="form-control input-sm" type="text" ng-model="rentalApplicationForm.veicleInfo[vehicle.number].year" placeholder="Year" required>
+        <div class="row repeat-animate" ng-repeat="vehicle in vehicles" ng-class-even="'striped'">
+          <div class="col-xs-11 col-md-11">
+            <div class="row">
+              <div class="col-xs-6 col-md-2">
+                <div class="form-group">
+                  <label class="control-label">Year</label>
+                  <input class="form-control input-sm" type="text" ng-model="rentalApplicationForm.veicleInfo[vehicle.number].year" placeholder="Year" required>
+                </div>
+              </div>
+              <div class="col-xs-6 col-md-2">
+                <div class="form-group">
+                  <label class="control-label">Make</label>
+                  <input class="form-control input-sm" type="text" ng-model="rentalApplicationForm.veicleInfo[vehicle.number].make" placeholder="Make" required>
+                </div>
+              </div>
+              <div class="col-xs-6 col-md-2">
+                <div class="form-group">
+                  <label class="control-label">Model</label>
+                  <input class="form-control input-sm" type="text" ng-model="rentalApplicationForm.veicleInfo[vehicle.number].model" placeholder="Model" required>
+                </div>
+              </div>
+              <div class="col-xs-6 col-md-2">
+                <div class="form-group">
+                  <label class="control-label">Color</label>
+                  <input class="form-control input-sm" type="text" ng-model="rentalApplicationForm.veicleInfo[vehicle.number].color" placeholder="Color" required>
+                </div>
+              </div>
+              <div class="col-xs-6 col-md-2">
+                <div class="form-group">
+                  <label class="control-label">Plate #</label>
+                  <input class="form-control input-sm" type="text" ng-model="rentalApplicationForm.veicleInfo[vehicle.number].plate" placeholder="Plate #" required>
+                </div>
+              </div>
+              <div class="col-xs-6 col-md-2">
+                <div class="form-group">
+                  <label class="control-label">State</label>
+                  <select class="form-control input-sm" ng-model="rentalApplicationForm.veicleInfo[vehicle.number].state" ng-options="state.abbrev for state in states" required>
+                    <option value="" disabled selected>Please select</option>
+                  </select>
+                </div>
+              </div>     
             </div>
           </div>
-          <div class="col-xs-6 col-md-2">
-            <div class="form-group">
-              <label class="control-label">Make</label>
-              <input class="form-control input-sm" type="text" ng-model="rentalApplicationForm.veicleInfo[vehicle.number].make" placeholder="Make" required>
-            </div>
-          </div>
-          <div class="col-xs-6 col-md-2">
-            <div class="form-group">
-              <label class="control-label">Model</label>
-              <input class="form-control input-sm" type="text" ng-model="rentalApplicationForm.veicleInfo[vehicle.number].model" placeholder="Model" required>
-            </div>
-          </div>
-          <div class="col-xs-6 col-md-2">
-            <div class="form-group">
-              <label class="control-label">Color</label>
-              <input class="form-control input-sm" type="text" ng-model="rentalApplicationForm.veicleInfo[vehicle.number].color" placeholder="Color" required>
-            </div>
-          </div>
-          <div class="col-xs-6 col-md-2">
-            <div class="form-group">
-              <label class="control-label">Plate #</label>
-              <input class="form-control input-sm" type="text" ng-model="rentalApplicationForm.veicleInfo[vehicle.number].plate" placeholder="Plate #" required>
-            </div>
-          </div>
-          <div class="col-xs-6 col-md-1">
-            <div class="form-group">
-              <label class="control-label">State</label>
-              <input class="form-control input-sm" type="text" ng-model="rentalApplicationForm.veicleInfo[vehicle.number].state" placeholder="State" required>
-            </div>
-          </div>
-          <div class="col-xs-6 col-md-1">
+          <div class="col-xs-1 col-md-1">
             <button type="button" class="btn btn-danger btn-sm btn-block btn-delete-proposed" ng-click="deleteVeicleInfo($index)"><i class="fa fa-remove"></i>Delete</button>
           </div>
         </div>
@@ -438,7 +446,7 @@
         </div>
       </div>
       <div class="panel-body">
-        <div class="row" ng-repeat="employment in employments" ng-class-even="'striped'">
+        <div class="row repeat-animate" ng-repeat="employment in employments" ng-class-even="'striped'">
           <div class="col-xs-11 col-md-11">
             <div class="row">
               <div class="col-xs-6 col-md-5">
@@ -469,8 +477,8 @@
               </div>
               <div class="col-xs-6 col-md-3">
                 <div class="form-group">
-                  <label class="control-label">Phone</label>
-                  <input class="form-control input-sm" type="text" ng-model="rentalApplicationForm.employment[employment.number].yphone" placeholder="Phone" required>
+                  <label class="control-label">Phone<small> Ex: +1(999)-999-9999</small></label>
+                  <input class="form-control input-sm" type="text" ng-model="rentalApplicationForm.employment[employment.number].yphone" mask="+1(999)-999-9999" placeholder="Phone" required>
                 </div>
               </div>
               <div class="col-xs-6 col-md-2">
@@ -531,7 +539,7 @@
         </div>
       </div>
       <div class="panel-body">
-        <div class="row" ng-repeat="income in incomes" ng-class-even="'striped'">
+        <div class="row repeat-animate" ng-repeat="income in incomes" ng-class-even="'striped'">
           <div class="col-xs-11 col-md-11">
             <div class="row">
               <div class="col-xs-6 col-md-5">

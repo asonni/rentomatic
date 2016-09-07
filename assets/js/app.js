@@ -4,13 +4,14 @@
     'ngAnimate',
     'ui.router',
     'oc.lazyLoad',
-    'angularSpinner',
-    'angular-ui-view-spinner',
     'anim-in-out',
     'jcs-autoValidate',
-    'infinite-scroll'
+    'infinite-scroll',
+    'ngMask',
+    'mgcrea.ngStrap',
+    'nya.bootstrap.select'
   ])
-  .run(['$rootScope','bootstrap3ElementModifier',function($rootScope,bootstrap3ElementModifier) {
+  .run(['$rootScope','bootstrap3ElementModifier','defaultErrorMessageResolver',function($rootScope,bootstrap3ElementModifier,defaultErrorMessageResolver) {
     // you can inject any instance here
     $rootScope.ctrl = {
       'speed': 200,
@@ -19,8 +20,17 @@
       'resultsStyle': 'anim-slide-below-fade'
     };
     bootstrap3ElementModifier.enableValidationStateIcons(true);
+    defaultErrorMessageResolver.getErrorMessages().then(function (errorMessages) {
+      errorMessages.mask = "";
+    });
   }])
-  .config(['$stateProvider','$urlRouterProvider','$ocLazyLoadProvider',function($stateProvider,$urlRouterProvider,$ocLazyLoadProvider){
+  .config(['$stateProvider','$urlRouterProvider','$ocLazyLoadProvider','$datepickerProvider',function($stateProvider,$urlRouterProvider,$ocLazyLoadProvider,$datepickerProvider){
+    angular.extend($datepickerProvider.defaults, {
+      'dateFormat': 'yyyy-MM-dd',
+      'dateType': 'string',
+      'startWeek': 1,
+      'autoclose': true
+    });
     $urlRouterProvider.otherwise('/');
     $stateProvider.state('results', {
       url: '/',
