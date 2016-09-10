@@ -9,7 +9,7 @@
     'infinite-scroll',
     'ngMask',
     'mgcrea.ngStrap',
-    'nya.bootstrap.select'
+    'toggle-switch'
   ])
   .run(['$rootScope','bootstrap3ElementModifier','defaultErrorMessageResolver',function($rootScope,bootstrap3ElementModifier,defaultErrorMessageResolver) {
     // you can inject any instance here

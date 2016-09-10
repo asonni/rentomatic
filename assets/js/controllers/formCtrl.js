@@ -19,6 +19,7 @@
   }])
   .controller('FormCtrl',['$scope','formServe',function($scope,formServe){
     $scope.required = true;
+    $scope.switchStatus = false;
     $scope.rentalApplicationForm = [];
     $scope.occupantCounter = 1;
     $scope.petCounter = 1;
