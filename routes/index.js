@@ -11,4 +11,5 @@ router.get('/pages/:name', function(req, res) {
   res.render('pages/' + name);
 });
 
+
 module.exports = router;
