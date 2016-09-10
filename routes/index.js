@@ -11,5 +11,14 @@ router.get('/pages/:name', function(req, res) {
   res.render('pages/' + name);
 });
 
+/* add a tenant  */
+router.post('/addTenant', function(req, res, next) {
+  console.log(req.body);
+});
+
+
+
+
+
 
 module.exports = router;
