@@ -9,25 +9,25 @@
           <div class="col-xs-6 col-md-3">
             <div class="form-group">
               <label class="control-label">First Name</label>
-              <input class="form-control input-sm" type="text" ng-model="rentalApplicationForm.fname" placeholder="First Name" required>
+              <input class="form-control input-sm" type="text" ng-model="rentalApplicationForm.fname" placeholder="First Name" ng-required="required">
             </div>
           </div>
           <div class="col-xs-6 col-md-3">
             <div class="form-group">
               <label class="control-label">Middle</label>
-              <input class="form-control input-sm" type="text" ng-model="rentalApplicationForm.mname" placeholder="Middle" required>
+              <input class="form-control input-sm" type="text" ng-model="rentalApplicationForm.mname" placeholder="Middle" ng-required="required">
             </div>
           </div>
           <div class="col-xs-6 col-md-3">
             <div class="form-group">
               <label class="control-label">Last</label>
-              <input class="form-control input-sm" type="text" ng-model="rentalApplicationForm.lname" placeholder="Last" required>
+              <input class="form-control input-sm" type="text" ng-model="rentalApplicationForm.lname" placeholder="Last" ng-required="required">
             </div>
           </div>
           <div class="col-xs-6 col-md-3">
             <div class="form-group">
               <label class="control-label">S.S.#</label>
-              <input class="form-control input-sm" type="text" ng-model="rentalApplicationForm.ssn" mask="999-99-9999" placeholder="S.S.#" required>
+              <input class="form-control input-sm" type="text" ng-model="rentalApplicationForm.ssn" mask="999-99-9999" placeholder="S.S.#" ng-required="required">
             </div>
           </div>
         </div>
@@ -35,25 +35,25 @@
           <div class="col-xs-6 col-md-3">
             <div class="form-group">
               <label class="control-label">Date of Birth</label>
-              <input class="form-control input-sm" type="text" ng-model="rentalApplicationForm.dob" placeholder="Date of Birth" bs-datepicker required>
+              <input class="form-control input-sm" type="text" ng-model="rentalApplicationForm.dob" placeholder="Date of Birth" bs-datepicker ng-required="required">
             </div>
           </div>
           <div class="col-xs-6 col-md-3">
             <div class="form-group">
               <label class="control-label">Drivers License #</label>
-              <input class="form-control input-sm" type="text" ng-model="rentalApplicationForm.dl" placeholder="Drivers License #" required>
+              <input class="form-control input-sm" type="text" ng-model="rentalApplicationForm.dl" placeholder="Drivers License #" ng-required="required">
             </div>
           </div>
           <div class="col-xs-6 col-md-3">
             <div class="form-group">
               <label class="control-label">Phone Cell<small> Ex: +1(999)-999-9999</small></label>
-              <input class="form-control input-sm" type="text" ng-model="rentalApplicationForm.phonec" mask="+1(999)-999-9999" placeholder="Phone Cell" required>
+              <input class="form-control input-sm" type="text" ng-model="rentalApplicationForm.phonec" mask="+1(999)-999-9999" placeholder="Phone Cell" ng-required="required">
             </div>
           </div>
           <div class="col-xs-6 col-md-3">
             <div class="form-group">
               <label class="control-label">Phone Work<small> Ex: +1(999)-999-9999</small></label>
-              <input class="form-control input-sm" type="text" ng-model="rentalApplicationForm.phonew" mask="+1(999)-999-9999" placeholder="Phone Work" required>
+              <input class="form-control input-sm" type="text" ng-model="rentalApplicationForm.phonew" mask="+1(999)-999-9999" placeholder="Phone Work" ng-required="required">
             </div>
           </div>
         </div>
@@ -61,19 +61,19 @@
           <div class="col-xs-6 col-md-4">
             <div class="form-group">
               <label class="control-label">Work Ext</label>
-              <input class="form-control input-sm" type="text" ng-model="rentalApplicationForm.ext" placeholder="Work Ext" required>
+              <input class="form-control input-sm" type="text" ng-model="rentalApplicationForm.ext" placeholder="Work Ext" ng-required="required">
             </div>
           </div>
           <div class="col-xs-6 col-md-4">
             <div class="form-group">
               <label class="control-label">Email</label>
-              <input class="form-control input-sm" type="email" ng-model="rentalApplicationForm.email" placeholder="Email" required>
+              <input class="form-control input-sm" type="email" ng-model="rentalApplicationForm.email" placeholder="Email" ng-required="required">
             </div>
           </div>
           <div class="col-xs-6 col-md-4">
             <div class="form-group">
               <label class="control-label">Credit Score</label>
-              <input class="form-control input-sm" type="text" ng-model="rentalApplicationForm.cscore" placeholder="Credit Score" required>
+              <input class="form-control input-sm" type="text" ng-model="rentalApplicationForm.cscore" placeholder="Credit Score" ng-required="required">
             </div>
           </div>
         </div>
@@ -81,19 +81,19 @@
           <div class="col-xs-6 col-md-6">
             <div class="form-group">
               <label class="control-label">Present Home Address</label>
-              <input class="form-control input-sm" type="text" ng-model="rentalApplicationForm.paddress" placeholder="Present Home Address" required>
+              <input class="form-control input-sm" type="text" ng-model="rentalApplicationForm.paddress" placeholder="Present Home Address" ng-required="required">
             </div>
           </div>
           <div class="col-xs-6 col-md-2">
             <div class="form-group">
               <label class="control-label">City</label>
-              <input class="form-control input-sm" type="text" ng-model="rentalApplicationForm.pcity" placeholder="City" required>
+              <input class="form-control input-sm" type="text" ng-model="rentalApplicationForm.pcity" placeholder="City" ng-required="required">
             </div>
           </div>
           <div class="col-xs-6 col-md-2">
             <div class="form-group">
               <label class="control-label">State</label>
-              <select class="form-control input-sm" ng-model="rentalApplicationForm.pstate" ng-options="state.abbrev for state in states" required>
+              <select class="form-control input-sm" ng-model="rentalApplicationForm.pstate" ng-options="state.abbrev for state in states" ng-required="required">
                 <option value="" disabled selected>Please select</option>
               </select>
             </div>
@@ -101,7 +101,7 @@
           <div class="col-xs-6 col-md-2">
             <div class="form-group">
               <label class="control-label">ZIP</label>
-              <input class="form-control input-sm" type="text" ng-model="rentalApplicationForm.pzip" placeholder="ZIP" required>
+              <input class="form-control input-sm" type="text" ng-model="rentalApplicationForm.pzip" placeholder="ZIP" ng-required="required">
             </div>
           </div>
         </div>
@@ -109,19 +109,19 @@
           <div class="col-xs-6 col-md-4">
             <div class="form-group">
               <label class="control-label">Length of Time</label>
-              <input class="form-control input-sm" type="text" ng-model="rentalApplicationForm.plot" placeholder="Length of Time" required>
+              <input class="form-control input-sm" type="text" ng-model="rentalApplicationForm.plot" placeholder="Length of Time" ng-required="required">
             </div>
           </div>
           <div class="col-xs-6 col-md-5">
             <div class="form-group">
               <label class="control-label">Present Landlord</label>
-              <input class="form-control input-sm" type="text" ng-model="rentalApplicationForm.plandlord" placeholder="Present Landlord" required>
+              <input class="form-control input-sm" type="text" ng-model="rentalApplicationForm.plandlord" placeholder="Present Landlord" ng-required="required">
             </div>
           </div>
           <div class="col-xs-6 col-md-3">
             <div class="form-group">
               <label class="control-label">Landlord Phone<small> Ex: +1(999)-999-9999</small></label>
-              <input class="form-control input-sm" type="text" ng-model="rentalApplicationForm.llphone" mask="+1(999)-999-9999" placeholder="Landlord Phone" required>
+              <input class="form-control input-sm" type="text" ng-model="rentalApplicationForm.llphone" mask="+1(999)-999-9999" placeholder="Landlord Phone" ng-required="required">
             </div>
           </div>
         </div>
@@ -129,13 +129,13 @@
           <div class="col-xs-6 col-md-6">
             <div class="form-group">
               <label class="control-label">Reason for Leaving</label>
-              <input class="form-control input-sm" type="text" ng-model="rentalApplicationForm.rfl" placeholder="Reason for Leaving" required>
+              <input class="form-control input-sm" type="text" ng-model="rentalApplicationForm.rfl" placeholder="Reason for Leaving" ng-required="required">
             </div>
           </div>
           <div class="col-xs-6 col-md-6">
             <div class="form-group">
               <label class="control-label">Amount of Rent</label>
-              <input class="form-control input-sm" type="text" ng-model="rentalApplicationForm.aor" placeholder="Amount of Rent" required>
+              <input class="form-control input-sm" type="text" ng-model="rentalApplicationForm.aor" placeholder="Amount of Rent" ng-required="required">
             </div>
           </div>
         </div>
@@ -143,19 +143,19 @@
           <div class="col-xs-6 col-md-6">
             <div class="form-group">
               <label class="control-label">Previous Home Address</label>
-              <input class="form-control input-sm" type="text" ng-model="rentalApplicationForm.paddress2" placeholder="Previous Home Address" required>
+              <input class="form-control input-sm" type="text" ng-model="rentalApplicationForm.paddress2" placeholder="Previous Home Address" ng-required="required">
             </div>
           </div>
           <div class="col-xs-6 col-md-2">
             <div class="form-group">
               <label class="control-label">City</label>
-              <input class="form-control input-sm" type="text" ng-model="rentalApplicationForm.pcity2" placeholder="City" required>
+              <input class="form-control input-sm" type="text" ng-model="rentalApplicationForm.pcity2" placeholder="City" ng-required="required">
             </div>
           </div>
           <div class="col-xs-6 col-md-2">
             <div class="form-group">
               <label class="control-label">State</label>
-              <select class="form-control input-sm" ng-model="rentalApplicationForm.pstate2" ng-options="state.abbrev for state in states" required>
+              <select class="form-control input-sm" ng-model="rentalApplicationForm.pstate2" ng-options="state.abbrev for state in states" ng-required="required">
                 <option value="" disabled selected>Please select</option>
               </select>
             </div>
@@ -163,7 +163,7 @@
           <div class="col-xs-6 col-md-2">
             <div class="form-group">
               <label class="control-label">ZIP</label>
-              <input class="form-control input-sm" type="text" ng-model="rentalApplicationForm.pzip2" placeholder="ZIP" required>
+              <input class="form-control input-sm" type="text" ng-model="rentalApplicationForm.pzip2" placeholder="ZIP" ng-required="required">
             </div>
           </div>
         </div>
@@ -171,19 +171,19 @@
           <div class="col-xs-6 col-md-4">
             <div class="form-group">
               <label class="control-label">Length of Time</label>
-              <input class="form-control input-sm" type="text" ng-model="rentalApplicationForm.plot2" placeholder="Length of Time" required>
+              <input class="form-control input-sm" type="text" ng-model="rentalApplicationForm.plot2" placeholder="Length of Time" ng-required="required">
             </div>
           </div>
           <div class="col-xs-6 col-md-5">
             <div class="form-group">
               <label class="control-label">Previous Landlord</label>
-              <input class="form-control input-sm" type="text" ng-model="rentalApplicationForm.plandlord2" placeholder="Previous Landlord" required>
+              <input class="form-control input-sm" type="text" ng-model="rentalApplicationForm.plandlord2" placeholder="Previous Landlord" ng-required="required">
             </div>
           </div>
           <div class="col-xs-6 col-md-3">
             <div class="form-group">
               <label class="control-label">Landlord Phone<small> Ex: +1(999)-999-9999</small></label>
-              <input class="form-control input-sm" type="text" ng-model="rentalApplicationForm.llphone2" mask="+1(999)-999-9999" placeholder="Landlord Phone" required>
+              <input class="form-control input-sm" type="text" ng-model="rentalApplicationForm.llphone2" mask="+1(999)-999-9999" placeholder="Landlord Phone" ng-required="required">
             </div>
           </div>
         </div>
@@ -191,19 +191,19 @@
           <div class="col-xs-6 col-md-6">
             <div class="form-group">
               <label class="control-label">Reason for Leaving</label>
-              <input class="form-control input-sm" type="text" ng-model="rentalApplicationForm.rfl2" placeholder="Reason for Leaving" required>
+              <input class="form-control input-sm" type="text" ng-model="rentalApplicationForm.rfl2" placeholder="Reason for Leaving" ng-required="required">
             </div>
           </div>
           <div class="col-xs-6 col-md-3">
             <div class="form-group">
               <label class="control-label">Amount of Rent</label>
-              <input class="form-control input-sm" type="text" ng-model="rentalApplicationForm.aor2" placeholder="Amount of Rent" required>
+              <input class="form-control input-sm" type="text" ng-model="rentalApplicationForm.aor2" placeholder="Amount of Rent" ng-required="required">
             </div>
           </div>
           <div class="col-xs-6 col-md-3">
             <div class="form-group">
               <label class="control-label">Was your rent up to date?</label>
-              <input class="form-control input-sm" type="text" ng-model="rentalApplicationForm.wyrutd2" placeholder="Was your rent up to date?" required>
+              <input class="form-control input-sm" type="text" ng-model="rentalApplicationForm.wyrutd2" placeholder="Was your rent up to date?" ng-required="required">
             </div>
           </div>
         </div>
@@ -211,19 +211,19 @@
           <div class="col-xs-6 col-md-6">
             <div class="form-group">
               <label class="control-label">Next Previous Home Address</label>
-              <input class="form-control input-sm" type="text" ng-model="rentalApplicationForm.nextPreviousHomeAddress" placeholder="Next Previous Home Address" required>
+              <input class="form-control input-sm" type="text" ng-model="rentalApplicationForm.nextPreviousHomeAddress" placeholder="Next Previous Home Address" ng-required="required">
             </div>
           </div>
           <div class="col-xs-6 col-md-2">
             <div class="form-group">
               <label class="control-label">City</label>
-              <input class="form-control input-sm" type="text" ng-model="rentalApplicationForm.nextCity" placeholder="City" required>
+              <input class="form-control input-sm" type="text" ng-model="rentalApplicationForm.nextCity" placeholder="City" ng-required="required">
             </div>
           </div>
           <div class="col-xs-6 col-md-2">
             <div class="form-group">
               <label class="control-label">State</label>
-              <select class="form-control input-sm" ng-model="rentalApplicationForm.nextState" ng-options="state.abbrev for state in states" required>
+              <select class="form-control input-sm" ng-model="rentalApplicationForm.nextState" ng-options="state.abbrev for state in states" ng-required="required">
                 <option value="" disabled selected>Please select</option>
               </select>
             </div>
@@ -231,7 +231,7 @@
           <div class="col-xs-6 col-md-2">
             <div class="form-group">
               <label class="control-label">ZIP</label>
-              <input class="form-control input-sm" type="text" ng-model="rentalApplicationForm.nextZip" placeholder="ZIP" required>
+              <input class="form-control input-sm" type="text" ng-model="rentalApplicationForm.nextZip" placeholder="ZIP" ng-required="required">
             </div>
           </div>
         </div>
@@ -239,19 +239,19 @@
           <div class="col-xs-6 col-md-4">
             <div class="form-group">
               <label class="control-label">Length of Time</label>
-              <input class="form-control input-sm" type="text" ng-model="rentalApplicationForm.nextLengthOfTime" placeholder="Length of Time" required>
+              <input class="form-control input-sm" type="text" ng-model="rentalApplicationForm.nextLengthOfTime" placeholder="Length of Time" ng-required="required">
             </div>
           </div>
           <div class="col-xs-6 col-md-5">
             <div class="form-group">
               <label class="control-label">Next Previous Landlord</label>
-              <input class="form-control input-sm" type="text" ng-model="rentalApplicationForm.nextPreviousLandlord" placeholder="Next Previous Landlord" required>
+              <input class="form-control input-sm" type="text" ng-model="rentalApplicationForm.nextPreviousLandlord" placeholder="Next Previous Landlord" ng-required="required">
             </div>
           </div>
           <div class="col-xs-6 col-md-3">
             <div class="form-group">
               <label class="control-label">Landlord Phone<small> Ex: +1(999)-999-9999</small></label>
-              <input class="form-control input-sm" type="text" ng-model="rentalApplicationForm.nextLandlordPhone" mask="+1(999)-999-9999" placeholder="Landlord Phone" required>
+              <input class="form-control input-sm" type="text" ng-model="rentalApplicationForm.nextLandlordPhone" mask="+1(999)-999-9999" placeholder="Landlord Phone" ng-required="required">
             </div>
           </div>
         </div>
@@ -259,19 +259,19 @@
           <div class="col-xs-6 col-md-6">
             <div class="form-group">
               <label class="control-label">Reason for Leaving</label>
-              <input class="form-control input-sm" type="text" ng-model="rentalApplicationForm.nextReasonForLeaving" placeholder="Reason for Leaving" required>
+              <input class="form-control input-sm" type="text" ng-model="rentalApplicationForm.nextReasonForLeaving" placeholder="Reason for Leaving" ng-required="required">
             </div>
           </div>
           <div class="col-xs-6 col-md-3">
             <div class="form-group">
               <label class="control-label">Amount of Rent</label>
-              <input class="form-control input-sm" type="text" ng-model="rentalApplicationForm.nextAmountOfRent" placeholder="Amount of Rent" required>
+              <input class="form-control input-sm" type="text" ng-model="rentalApplicationForm.nextAmountOfRent" placeholder="Amount of Rent" ng-required="required">
             </div>
           </div>
           <div class="col-xs-6 col-md-3">
             <div class="form-group">
               <label class="control-label">Was your rent up to date?</label>
-              <input class="form-control input-sm" type="text" ng-model="rentalApplicationForm.nextWasRentUpDate" placeholder="Was your rent up to date?" required>
+              <input class="form-control input-sm" type="text" ng-model="rentalApplicationForm.nextWasRentUpDate" placeholder="Was your rent up to date?" ng-required="required">
             </div>
           </div>
         </div>
@@ -279,7 +279,7 @@
           <div class="col-xs-6 col-md-6">
             <div class="form-group">
               <label class="control-label">If renting with other tenants</label>
-              <input class="form-control input-sm" type="text" ng-model="rentalApplicationForm.who" placeholder="If renting with other tenants, please link them to this application by adding their username" required>
+              <input class="form-control input-sm" type="text" ng-model="rentalApplicationForm.who" placeholder="If renting with other tenants, please link them to this application by adding their username" ng-required="required">
             </div>
           </div>
         </div>
@@ -301,25 +301,25 @@
           <div class="col-xs-6 col-md-3">
             <div class="form-group">
               <label class="control-label">Name</label>
-              <input class="form-control input-sm" type="text" ng-model="rentalApplicationForm.proposedOccupant[occupant.number].name" placeholder="Name" required>
+              <input class="form-control input-sm" type="text" ng-model="rentalApplicationForm.proposedOccupant[occupant.number].name" placeholder="Name" ng-required="required">
             </div>
           </div>
           <div class="col-xs-6 col-md-3">
             <div class="form-group">
               <label class="control-label">Relationship</label>
-              <input class="form-control input-sm" type="text" ng-model="rentalApplicationForm.proposedOccupant[occupant.number].relation" placeholder="Relationship" required>
+              <input class="form-control input-sm" type="text" ng-model="rentalApplicationForm.proposedOccupant[occupant.number].relation" placeholder="Relationship" ng-required="required">
             </div>
           </div>
           <div class="col-xs-6 col-md-3">
             <div class="form-group">
               <label class="control-label">Occupation</label>
-              <input class="form-control input-sm" type="text" ng-model="rentalApplicationForm.proposedOccupant[occupant.number].occupation" placeholder="Occupation" required>
+              <input class="form-control input-sm" type="text" ng-model="rentalApplicationForm.proposedOccupant[occupant.number].occupation" placeholder="Occupation" ng-required="required">
             </div>
           </div>
           <div class="col-xs-6 col-md-2">
             <div class="form-group">
               <label class="control-label">Age</label>
-              <input class="form-control input-sm" type="text" ng-model="rentalApplicationForm.proposedOccupant[occupant.number].age" placeholder="Age" required>
+              <input class="form-control input-sm" type="text" ng-model="rentalApplicationForm.proposedOccupant[occupant.number].age" placeholder="Age" ng-required="required">
             </div>
           </div>
           <div class="col-xs-6 col-md-1">
@@ -344,24 +344,24 @@
           <div class="col-xs-6 col-md-3">
             <div class="form-group">
               <label class="control-label">Name</label>
-              <input class="form-control input-sm" type="text" ng-model="rentalApplicationForm.proposedPet[pet.number].name" placeholder="Name" required>
+              <input class="form-control input-sm" type="text" ng-model="rentalApplicationForm.proposedPet[pet.number].name" placeholder="Name" ng-required="required">
             </div>
           </div>
           <div class="col-xs-6 col-md-3">
             <div class="form-group">
               <label class="control-label">Type/Breed</label>
-              <input class="form-control input-sm" type="text" ng-model="rentalApplicationForm.proposedPet[pet.number].type" placeholder="Type/Breed" required>
+              <input class="form-control input-sm" type="text" ng-model="rentalApplicationForm.proposedPet[pet.number].type" placeholder="Type/Breed" ng-required="required">
             </div>
           </div>
           <div class="col-xs-6 col-md-3 text-center" style="padding-top:12px;">
             <div class="form-group">
               <div class="radio" style="padding-top: 8px;">
                 <label style="padding-right: 30px;">
-                  <input type="radio" name="doorStatus" value="indoor" ng-model="rentalApplicationForm.proposedPet[pet.number].indoor" required>
+                  <input type="radio" name="doorStatus" value="indoor" ng-model="rentalApplicationForm.proposedPet[pet.number].indoor" ng-required="required">
                   <b>Indoor</b>
                 </label>
                 <label>
-                  <input type="radio" name="doorStatus" value="outdoor" ng-model="rentalApplicationForm.proposedPet[pet.number].indoor" required>
+                  <input type="radio" name="doorStatus" value="outdoor" ng-model="rentalApplicationForm.proposedPet[pet.number].indoor" ng-required="required">
                   <b>Outdoor</b>
                 </label>
               </div>
@@ -370,7 +370,7 @@
           <div class="col-xs-6 col-md-2">
             <div class="form-group">
               <label class="control-label">Age</label>
-              <input class="form-control input-sm" type="text" ng-model="rentalApplicationForm.proposedPet[pet.number].age" placeholder="Age" required>
+              <input class="form-control input-sm" type="text" ng-model="rentalApplicationForm.proposedPet[pet.number].age" placeholder="Age" ng-required="required">
             </div>
           </div>
           <div class="col-xs-6 col-md-1">
@@ -397,37 +397,37 @@
               <div class="col-xs-6 col-md-2">
                 <div class="form-group">
                   <label class="control-label">Year</label>
-                  <input class="form-control input-sm" type="text" bs-datepicker data-date-format="yyyy" data-min-view="2" ng-model="rentalApplicationForm.veicleInfo[vehicle.number].year" placeholder="Year" required>
+                  <input class="form-control input-sm" type="text" bs-datepicker data-date-format="yyyy" data-min-view="2" ng-model="rentalApplicationForm.veicleInfo[vehicle.number].year" placeholder="Year" ng-required="required">
                 </div>
               </div>
               <div class="col-xs-6 col-md-2">
                 <div class="form-group">
                   <label class="control-label">Make</label>
-                  <input class="form-control input-sm" type="text" ng-model="rentalApplicationForm.veicleInfo[vehicle.number].make" placeholder="Make" required>
+                  <input class="form-control input-sm" type="text" ng-model="rentalApplicationForm.veicleInfo[vehicle.number].make" placeholder="Make" ng-required="required">
                 </div>
               </div>
               <div class="col-xs-6 col-md-2">
                 <div class="form-group">
                   <label class="control-label">Model</label>
-                  <input class="form-control input-sm" type="text" ng-model="rentalApplicationForm.veicleInfo[vehicle.number].model" placeholder="Model" required>
+                  <input class="form-control input-sm" type="text" ng-model="rentalApplicationForm.veicleInfo[vehicle.number].model" placeholder="Model" ng-required="required">
                 </div>
               </div>
               <div class="col-xs-6 col-md-2">
                 <div class="form-group">
                   <label class="control-label">Color</label>
-                  <input class="form-control input-sm" type="text" ng-model="rentalApplicationForm.veicleInfo[vehicle.number].color" placeholder="Color" required>
+                  <input class="form-control input-sm" type="text" ng-model="rentalApplicationForm.veicleInfo[vehicle.number].color" placeholder="Color" ng-required="required">
                 </div>
               </div>
               <div class="col-xs-6 col-md-2">
                 <div class="form-group">
                   <label class="control-label">Plate #</label>
-                  <input class="form-control input-sm" type="text" ng-model="rentalApplicationForm.veicleInfo[vehicle.number].plate" placeholder="Plate #" required>
+                  <input class="form-control input-sm" type="text" ng-model="rentalApplicationForm.veicleInfo[vehicle.number].plate" placeholder="Plate #" ng-required="required">
                 </div>
               </div>
               <div class="col-xs-6 col-md-2">
                 <div class="form-group">
                   <label class="control-label">State</label>
-                  <select class="form-control input-sm" ng-model="rentalApplicationForm.veicleInfo[vehicle.number].state" ng-options="state.abbrev for state in states" required>
+                  <select class="form-control input-sm" ng-model="rentalApplicationForm.veicleInfo[vehicle.number].state" ng-options="state.abbrev for state in states" ng-required="required">
                     <option value="" disabled selected>Please select</option>
                   </select>
                 </div>
@@ -458,19 +458,19 @@
               <div class="col-xs-6 col-md-5">
                 <div class="form-group">
                   <label class="control-label">Current Employment</label>
-                  <input class="form-control input-sm" type="text" ng-model="rentalApplicationForm.employment[employment.number].cemployer" placeholder="Current Employment" required>
+                  <input class="form-control input-sm" type="text" ng-model="rentalApplicationForm.employment[employment.number].cemployer" placeholder="Current Employment" ng-required="required">
                 </div>
               </div>
               <div class="col-xs-6 col-md-5">
                 <div class="form-group">
                   <label class="control-label">Occupation</label>
-                  <input class="form-control input-sm" type="text" ng-model="rentalApplicationForm.employment[employment.number].occupation" placeholder="Occupation" required>
+                  <input class="form-control input-sm" type="text" ng-model="rentalApplicationForm.employment[employment.number].occupation" placeholder="Occupation" ng-required="required">
                 </div>
               </div>
               <div class="col-xs-6 col-md-2">
                 <div class="form-group">
                   <label class="control-label">Hours/Week</label>
-                  <input class="form-control input-sm" type="text" ng-model="rentalApplicationForm.employment[employment.number].hweek" placeholder="Hours/Week" required>
+                  <input class="form-control input-sm" type="text" ng-model="rentalApplicationForm.employment[employment.number].hweek" placeholder="Hours/Week" ng-required="required">
                 </div>
               </div>
             </div>
@@ -478,25 +478,25 @@
               <div class="col-xs-6 col-md-5">
                 <div class="form-group">
                   <label class="control-label">Supervisor</label>
-                  <input class="form-control input-sm" type="text" ng-model="rentalApplicationForm.employment[employment.number].supervisor" placeholder="Supervisor" required>
+                  <input class="form-control input-sm" type="text" ng-model="rentalApplicationForm.employment[employment.number].supervisor" placeholder="Supervisor" ng-required="required">
                 </div>
               </div>
               <div class="col-xs-6 col-md-3">
                 <div class="form-group">
                   <label class="control-label">Phone<small> Ex: +1(999)-999-9999</small></label>
-                  <input class="form-control input-sm" type="text" ng-model="rentalApplicationForm.employment[employment.number].yphone" mask="+1(999)-999-9999" placeholder="Phone" required>
+                  <input class="form-control input-sm" type="text" ng-model="rentalApplicationForm.employment[employment.number].yphone" mask="+1(999)-999-9999" placeholder="Phone" ng-required="required">
                 </div>
               </div>
               <div class="col-xs-6 col-md-2">
                 <div class="form-group">
                   <label class="control-label">EXT:</label>
-                  <input class="form-control input-sm" type="text" ng-model="rentalApplicationForm.employment[employment.number].ext" placeholder="EXT:" required>
+                  <input class="form-control input-sm" type="text" ng-model="rentalApplicationForm.employment[employment.number].ext" placeholder="EXT:" ng-required="required">
                 </div>
               </div>
               <div class="col-xs-6 col-md-2">
                 <div class="form-group">
                   <label class="control-label">Years Employed</label>
-                  <input class="form-control input-sm" type="text" ng-model="rentalApplicationForm.employment[employment.number].yemployed" placeholder="Years Employed" required>
+                  <input class="form-control input-sm" type="text" ng-model="rentalApplicationForm.employment[employment.number].yemployed" placeholder="Years Employed" ng-required="required">
                 </div>
               </div>
             </div>
@@ -504,19 +504,19 @@
               <div class="col-xs-6 col-md-6">
                 <div class="form-group">
                   <label class="control-label">Address</label>
-                  <input class="form-control input-sm" type="text" ng-model="rentalApplicationForm.employment[employment.number].address" placeholder="Address" required>
+                  <input class="form-control input-sm" type="text" ng-model="rentalApplicationForm.employment[employment.number].address" placeholder="Address" ng-required="required">
                 </div>
               </div>
               <div class="col-xs-6 col-md-2">
                 <div class="form-group">
                   <label class="control-label">City</label>
-                  <input class="form-control input-sm" type="text" ng-model="rentalApplicationForm.employment[employment.number].ecity" placeholder="City" required>
+                  <input class="form-control input-sm" type="text" ng-model="rentalApplicationForm.employment[employment.number].ecity" placeholder="City" ng-required="required">
                 </div>
               </div>
               <div class="col-xs-6 col-md-2">
                 <div class="form-group">
                   <label class="control-label">State</label>
-                  <select class="form-control input-sm" ng-model="rentalApplicationForm.employment[employment.number].estate" ng-options="state.abbrev for state in states" required>
+                  <select class="form-control input-sm" ng-model="rentalApplicationForm.employment[employment.number].estate" ng-options="state.abbrev for state in states" ng-required="required">
                     <option value="" disabled selected>Please select</option>
                   </select>
                 </div>
@@ -524,7 +524,7 @@
               <div class="col-xs-6 col-md-2">
                 <div class="form-group">
                   <label class="control-label">ZIP</label>
-                  <input class="form-control input-sm" type="text" ng-model="rentalApplicationForm.employment[employment.number].ezip" placeholder="ZIP" required>
+                  <input class="form-control input-sm" type="text" ng-model="rentalApplicationForm.employment[employment.number].ezip" placeholder="ZIP" ng-required="required">
                 </div>
               </div>
             </div>
@@ -553,19 +553,19 @@
               <div class="col-xs-6 col-md-5">
                 <div class="form-group">
                   <label class="control-label">Current Income</label>
-                  <input class="form-control input-sm" type="text" ng-model="rentalApplicationForm.income[income.number].cincome" placeholder="Current Income" required>
+                  <input class="form-control input-sm" type="text" ng-model="rentalApplicationForm.income[income.number].cincome" placeholder="Current Income" ng-required="required">
                 </div>
               </div>
               <div class="col-xs-6 col-md-5">
                 <div class="form-group">
                   <label class="control-label">Source</label>
-                  <input class="form-control input-sm" type="text" ng-model="rentalApplicationForm.income[income.number].source" placeholder="Source" required>
+                  <input class="form-control input-sm" type="text" ng-model="rentalApplicationForm.income[income.number].source" placeholder="Source" ng-required="required">
                 </div>
               </div>
               <div class="col-xs-6 col-md-2">
                 <div class="form-group">
                   <label class="control-label">Proof of Income</label>
-                  <input class="form-control input-sm" type="text" ng-model="rentalApplicationForm.income[income.number].proof" placeholder="Proof of Income" required>
+                  <input class="form-control input-sm" type="text" ng-model="rentalApplicationForm.income[income.number].proof" placeholder="Proof of Income" ng-required="required">
                 </div>
               </div>
             </div>
