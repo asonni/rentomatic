@@ -17,8 +17,8 @@
     };
     
   }])
-  .controller('FormCtrl',['$scope','formServe',function($scope,formServe){
-    $scope.required = true;
+  .controller('FormCtrl',['$scope','$http','formServe','formFactory',function($scope,$http,formServe,formFactory){
+    $scope.required = false;
     $scope.switchStatus = false;
     $scope.rentalApplicationForm = [];
     $scope.occupantCounter = 1;
@@ -69,10 +69,12 @@
     };
     $scope.newRentalApplication = function(){
       console.log($scope.rentalApplicationForm);
-      $scope.formServe.addTenant($scope.rentalApplicationForm).then(function(response){
-        console.log(response.data);
-      },function(response){
-        console.log("Somthing went wrong");
+      formFactory.addTenant($scope.rentalApplicationForm).then(function(response){
+        if (response.status === 200) {
+          console.log(response.data);
+        }
+      }).catch(function(error) {
+        console.log(error);
       });
     };
   }]);
